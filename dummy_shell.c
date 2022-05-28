@@ -1,9 +1,5 @@
 #include <stdio.h>
-#ifdef _WIN32
-#include <Windows.h>
-#else
 #include <unistd.h>
-#endif
 #include <sys/wait.h>
 #include <assert.h>
 #include "leercadena.h"
@@ -103,7 +99,6 @@ int main(int argc, char* argv[]) {
       commands_len = len_cmds(vector_cadenas); 
       
       //---------------------COMMANDS--------------------------
-
       if (strcmp("salir",vector_cadenas[0]) == 0){	
 	 printf("*****************************************************************************\n");
 	 printf("******************** Gracias por usar mi dummy shell ;-) ********************\n");
