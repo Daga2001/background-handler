@@ -10,6 +10,11 @@ A shell which allows to manage Linux background processes in C
 Esta shell tiene como proposito comprender la forma en que se gestionan los procesos en el background de Linux, mediante el uso del lenguaje **C**.
 Con esta herramienta se pueden crear, eliminar y llevar al background cada proceso ejecutado por medio de comandos en la terminal simulada.
 
+# Autores
+- Diego Fernando Chaverra
+- David Alberto Guzman
+- Juan Camilo Santa
+
 # Consideraciones a tener en cuenta
 - El shell no acepta cadenas vacias, es decir, el usuario no debe presionar **ENTER** si no ha digitado previamente algun comando.
 - Se asume que hay un proceso padre que gestiona todos los hijos y que estos ultimos ejecutaran los comandos.
