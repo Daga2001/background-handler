@@ -42,4 +42,4 @@ En esta actualizacion se incluyen las siguientes mejoras:
 - **wait()** es remplazado por **waitpid()** para garantizar que el padre espera a los procesos hijos que se eliminan y no a los anteriores a estos.
 Ya que anteriormente, el llamado **wait(NULL)** era ignorado despues que un proceso hijo terminaba su ejecucion pero el padre ignoraba el anterior 
 llamado a **wait()** puesto que se mandaba al **background** dicho proceso hijo. Recordemos que **wait()** puede ser detenido mediante la terminacion
-de un proceso hijo o una señal.
+de un proceso hijo o una señal: https://www.geeksforgeeks.org/wait-system-call-c/.
